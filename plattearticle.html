@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+The site	
+</title>	
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="platteregion.css"/>
+<meta content="width=device-width" name="viewport">
+</head>	
+<BODY>
+<div id="sitewrapper">
+<header>
+</header>
+<nav>
+	<div id="menubtn">menu</div>
+	<ul>
+		<li><a>North Platte</a></li>
+		<li><a>South Platte</a></li>
+		<li><a>Central Platte</a></li>
+		<li><a>The Loups</a></li>
+		<li><a>Lower Platte</a></li>
+		<li><a>about the project</a></li>
+	</ul>
+</nav>
+<div id="contentheader">
+<section id="articleimage">
+<img src="./articleimage.jpg"/>	
+<div id="articleheader">
+<h1>The Nature Conservancy</h1>	
+<h2>By Chris Helzer, October 19, 2013</h2>	
+</div>	
+<div id="mapoverlay"></div>
+</section>
+</div>
+<div id="contentbody">
+<section id ="articlebody">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque ipsum, vitae placerat tellus. Aenean eu arcu mauris, ac tempor nulla. Ut commodo, neque vel consectetur feugiat, nisi justo tincidunt elit, ornare viverra enim odio eu urna. Nam ac arcu sed arcu fringilla euismod feugiat a massa. Vestibulum dapibus varius ligula. Sed vulputate ipsum vel orci tempus id aliquam ligula tincidunt. Duis arcu nibh, interdum at vulputate vitae, tristique eu leo. Vestibulum dui nisl, euismod at vulputate ac, pulvinar at lorem. In varius sollicitudin massa, eu posuere metus elementum a. Cras volutpat, ligula sit amet ultrices bibendum, nulla diam pulvinar lectus, sed vulputate nibh est in turpis.
+<br/><br/>
+<div class="videoWrapper">
+<iframe src="http://player.vimeo.com/video/35386415?title=0&amp;byline=0&amp;portrait=0" width="100%" height="400px"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/35386415">Platte Basin Timelapse Project</a> from <a href="http://vimeo.com/user5863794">Michael FORSBERG</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+</div>
+</p>
+</section>
+</div>
+</div>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script> 
+var bodyheight = document.getElementById("regionbodycontent").clientHeight + 20;
+console.log(bodyheight);
+document.getElementById("contentbody").style.height=(bodyheight+"px");
+
+$(window).resize(function() {
+bodyheight = document.getElementById("regionbodycontent").clientHeight + 20;
+console.log(bodyheight);
+document.getElementById("contentbody").style.height=(bodyheight+"px");
+});
+
+var sidebaractive = "false";
+$("#searchnub").click(function() { 
+if (sidebaractive == "false") {
+$(".sidebar").addClass("activesidebar");
+sidebaractive = "true";
+}
+else {
+$(".sidebar").removeClass("activesidebar");
+sidebaractive = "false";
+}
+});
+</script>
+</BODY>	
+</HTML>

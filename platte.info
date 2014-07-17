@@ -1,0 +1,21 @@
+name = platte
+description = A theme for the Platte Timelapse website.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = layout.css
+scripts[] = scripts/themescripts.js
+
+; Information added by drupal.org packaging script on 2012-08-01
+version = "7.15"
+project = "drupal"
+datestamp = "1343839327"
+
+; Regions
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+regions[header] = Header
+
+

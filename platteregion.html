@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+The site	
+</title>	
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="platteregion.css"/>
+<meta content="width=device-width" name="viewport">
+</head>	
+<BODY>
+<div id="sitewrapper">
+<header>
+</header>
+<nav>
+	<div id="menubtn">menu</div>
+	<ul>
+		<li><a>North Platte</a></li>
+		<li><a>South Platte</a></li>
+		<li><a>Central Platte</a></li>
+		<li><a>The Loups</a></li>
+		<li><a>Lower Platte</a></li>
+		<li><a>about the project</a></li>
+	</ul>
+</nav>
+<div id="contentheader">
+<section id="mapbox">
+<div class="mapplaceholder"><iframe width="100%" height="390px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=218445645608412477546.0004ba20ac9605ab1a057&amp;ie=UTF8&amp;t=m&amp;ll=41.500951,-99.68193&amp;spn=3.001366,8.747863&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=218445645608412477546.0004ba20ac9605ab1a057&amp;ie=UTF8&amp;t=m&amp;ll=41.500951,-99.68193&amp;spn=3.001366,8.747863&amp;source=embed" style="color:#0000FF;text-align:left">Explore Nebraska’s Science Attractions</a> in a larger map</small></div>	
+</section>
+<section id="infobox">
+<h1>About the Central Platte</h1>
+<div class="infoimgplaceholder"></div>
+<p>The Central Plate Valley is among the most productive asdfasdfand heavily irrigated cropland in the world. In the western stretch of the Central Platte in Dawson and Buffalo Counties more than 200,000 acres of land are irrigated either through surface water from the Platte or from pumped ground water resources. entire Central Platte there are more than 18,000 irrigation wells.</p>
+</section>
+</div>
+<div id="contentbody">
+<section id ="regionbodycontent">
+<div class="storyblock">
+<div class="storyimageplaceholder"></div>	
+<h2>Story Title</h2>
+<p>The Nature Conservancy is undergoing a massive restoration project, constructing braided channels and restoring native grasslands. Watch a time-lapse of the project here.</p>	
+</div>	
+<div class="storyblock">
+<div class="storyimageplaceholder"></div>	
+<h2>Story Title</h2>
+<p>The Nature Conservancy is undergoing a massive restoration project, constructing braided channels and restoring native grasslands. Watch a time-lapse of the project here.</p>	
+</div>	
+<div class="storyblock">
+<div class="storyimageplaceholder"></div>	
+<h2>Story Title</h2>
+<p>The Nature Conservancy is undergoing a massive restoration project, constructing braided channels and restoring native grasslands. Watch a time-lapse of the project here.</p>	
+</div>	
+<div class="storyblock">
+<div class="storyimageplaceholder"></div>	
+<h2>Story Title</h2>
+<p>The Nature Conservancy is undergoing a massive restoration project, constructing braided channels and restoring native grasslands. Watch a time-lapse of the project here.</p>	
+</div>	
+<div class="storyblock">
+<div class="storyimageplaceholder"></div>	
+<h2>Story Title</h2>
+<p>The Nature Conservancy is undergoing a massive restoration project, constructing braided channels and restoring native grasslands. Watch a time-lapse of the project here.</p>	
+</div>	
+<div class="storyblock">
+<div class="storyimageplaceholder"></div>	
+<h2>Story Title</h2>
+<p>The Nature Conservancy is undergoing a massive restoration project, constructing braided channels and restoring native grasslands. Watch a time-lapse of the project here.</p>	
+</div>	
+</section>
+<section id="regionbodysidebar">
+<div class="sidebar">
+<div id="searchnub"><img src="glass.png"/></div>
+<form>
+<input type="text" style="width:120px;">
+<input type="submit" value="search">	
+</form>
+<h1>Browse by content type</h1> 
+<div id="searchplaceholder"/>
+<div class="categorybtn"> Picture stories </div>
+<div class="categorybtn"> Articles </div>
+<div class="categorybtn"> Timelapse videos</div>
+<h1>Browse by by date</h1>
+<div class="archivebtn">March 2013</div> 
+<div class="archivebtn">February 2013</div> 
+<div class="archivebtn">January 2013</div> 
+<div class="archivebtn"> 2013</div> 
+<div class="archivebtn"> 2012</div> 
+<div class="archivebtn"> 2011</div> 
+</div>
+
+</section>
+</div>
+</div>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script> 
+var bodyheight = document.getElementById("regionbodycontent").clientHeight + 20;
+console.log(bodyheight);
+document.getElementById("contentbody").style.height=(bodyheight+"px");
+
+$(window).resize(function() {
+bodyheight = document.getElementById("regionbodycontent").clientHeight + 20;
+console.log(bodyheight);
+document.getElementById("contentbody").style.height=(bodyheight+"px");
+});
+
+var sidebaractive = "false";
+$("#searchnub").click(function() { 
+if (sidebaractive == "false") {
+$(".sidebar").addClass("activesidebar");
+sidebaractive = "true";
+}
+else {
+$(".sidebar").removeClass("activesidebar");
+sidebaractive = "false";
+}
+});
+</script>
+</BODY>	
+</HTML>
