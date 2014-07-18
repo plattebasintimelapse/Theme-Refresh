@@ -100,16 +100,7 @@
     <div id="borderfill"></div>
         <?php print render($page['featured']); ?>
         <h1><?php print $title; ?> </h1>
-        <?php
-if (taxonomy_term_load($node->field_camera_location['und'][0]['tid'])) {
-$term=taxonomy_term_load($node->field_camera_location['und'][0]['tid']);
-$display = array('type' => 'geofield_openlayers');
-$result=field_view_field('taxonomy_term',$term,'field_coordinates',$display);
-echo render($result);
-}
-else {}
-?>
-
+        
 </section>
     <article id="main-wrapper"><div id="storycontent" class="clearfix">
 
