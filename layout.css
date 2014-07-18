@@ -332,11 +332,18 @@ font-size: 14px;
 line-height: 14px;
 }
 #block-views-recent-stories-block  .views-field.views-field-body a.views-more-link, .featuredstoriesblock .views-field.views-field-body a.views-more-link {
-font-size:18px;
-color: hsl(197, 43%, 59%);
+background-color: hsl(197, 43%, 59%);
+display: block;
+color: #FFF;
+text-align: center;
+font-size: 22px;
+font-weight: normal;
+padding: 10px;
 }
 #block-views-recent-stories-block  .views-field.views-field-body p, .featuredstoriesblock .views-field.views-field-body p {
 padding: 0%;
+margin-top:5px;
+line-height: 20px;
 }
 #block-views-recent-stories-block  .views-field.views-field-body, .featuredstoriesblock .views-field.views-field-body {
 display:block;
@@ -357,6 +364,7 @@ letter-spacing:1px;
 }
 #block-views-recent-stories-block .views-field-title, .featuredstoriesblock .views-field-title { 
 position: relative;
+margin: 10px 0px;
 }
 #block-views-recent-stories-block h2,  .featuredstoriesblock h2{
 width: 100%;
