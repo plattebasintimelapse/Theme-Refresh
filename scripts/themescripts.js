@@ -47,18 +47,7 @@ jQuery("#regionsidebar").prepend(exposedform);
 jQuery("#regionmain .view-filters").remove();
 
 jQuery(".openlayers-popup a").addClass("colorbox-node");
-  	jQuery('#block-views-recent-stories-block .views-row, .featuredstoriesblock .views-row').mouseenter(function() {
-  	if (jQuery(window).width() > 768) {
-  	jQuery('.views-field.views-field-body', this).fadeIn(200);	
-  	}
-  	else {}
-  	});
-  	jQuery('#block-views-recent-stories-block .views-row, .featuredstoriesblock .views-row').mouseleave(function() {
-  		if (jQuery(window).width() > 768) {
-  	jQuery('.views-field.views-field-body', this).fadeOut(200);	
-  	}
-  	else {}
-  	});
+
 
 jQuery('.media-image').each(function() {
 var caption = jQuery(this).attr("alt");
